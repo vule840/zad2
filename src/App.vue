@@ -1,15 +1,52 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    </div> 
+    <router-view/>-->
+
+
+   <!--  <div id="calendar-week" class="">sdfs</div>
+   <div id="calendar-entry">sdfsd</div> -->
+
+  <CalendarWeek/>
+   <CalendarEntry/>
+
   </div>
 </template>
 
+
+<script>
+
+  import CalendarWeek from './components/CalendarWeek.vue';
+  import CalendarEntry from './components/CalendarEntry.vue';
+
+  export default {
+    name: 'App',
+    components: {
+      CalendarWeek,
+      CalendarEntry
+    }
+  }
+
+</script>
+
 <style lang="scss">
-#app {
+  html, body {
+  height: 100%;
+  }
+#app{
+  background: red;
+}
+#calendar-week{
+
+}
+#calendar-entry{
+
+}
+
+/* #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,5 +62,5 @@
       color: #42b983;
     }
   }
-}
+} */
 </style>
